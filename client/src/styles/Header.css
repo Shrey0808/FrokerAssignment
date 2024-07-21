@@ -1,0 +1,49 @@
+/* src/components/Header.css */
+
+.header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end; /* Ensures the nav is pushed to the right */
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Sticks the header to the top of the viewport */
+  background-color: #fff;
+  z-index: 1000; /* Ensures the header is above other content */
+  /* border-bottom: 1px solid #e0e0e0; Optional: adds a border below the header */
+}
+
+.nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-right: 50px;
+  padding: 0.5rem;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #f77136;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2.5px;
+  width: 0;
+  background-color: #f77136;
+  transition: width 0.6s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

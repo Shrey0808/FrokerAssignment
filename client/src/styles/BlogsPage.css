@@ -1,0 +1,158 @@
+.froker-blog {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    font-size: 500rem; /* Increase font size */
+}
+.froker-blog-span1 {
+    color: #f76f32;
+    font-family: Gilroy-Bold, sans-serif;
+    margin: 0 10px; /* Space between text elements */
+}
+
+.froker-blog-span2 {
+    color: #333; /* Adjust color if needed */
+}
+
+.sub {
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /* Center block horizontally */
+    font-size: 50px; /* Increase font size */
+    margin-bottom: 30px; /* Space below the sub text */
+}
+
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align contents to the bottom */
+    gap: 1rem; /* Space between elements */
+    padding: 1rem; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #ddd; /* Border color and thickness */
+    margin-left: 18%;
+    margin-right: 18%;
+    height: 200px; /* Height of the container */
+    margin-bottom: 50px; /* Space below the container */
+    margin-top: 10px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    gap: 1rem; /* Space between elements */
+    margin-bottom: 20px; /* Space below the newsletter section */
+    margin-top: 20px; /* Space above the newsletter section */
+    width: 100%; /* Ensure it takes full width of its container */
+    margin-right: 20px;
+}
+
+.letterimg {
+    display: flex;
+    align-items: flex-end; /* Align image to the bottom */
+}
+
+.letterimg .pic {
+    width: 270px; /* Initial size for larger screens */
+    height: auto;
+    margin-left: 30px;
+}
+
+.lettersecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    gap: 0.25rem; /* Reduced space between elements */
+    flex: 1; /* Allow this section to take available space */
+    margin-left: 0; /* Ensure no extra margin is added */
+}
+
+.subscribetonews {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.25rem; /* Reduced space below text */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensure form container stretches to fit parent width */
+    gap: 0.5rem; /* Reduced space between form elements */
+    width: 100%; /* Ensure full width for the form container */
+}
+
+.subscribebutton {
+    display: flex;
+    align-items: center; /* Center input and button vertically */
+    gap: 0; /* No space between input and button */
+    width: 100%; /* Full width of the container */
+}
+
+.mail {
+    display: flex;
+    flex: 1; /* Take full width available */
+}
+
+.mail input {
+    padding: 1rem; /* Increase padding for better appearance */
+    border: 1px solid #ddd; /* Add border for input */
+    border-radius: 9999px 0 0 9999px; /* Capsule shape for the input field */
+    flex: 1; /* Take up remaining space */
+    font-weight: normal; /* Ensure input text is not bold */
+    background-color: white; /* Ensure consistent background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    min-width: 0; /* Allow input field to shrink properly */
+}
+
+.mail input:focus {
+    background-color: white; /* Maintain the same background color on focus */
+    border-color: #ddd; /* Maintain the same border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.subscribe {
+    padding: 1rem 1.5rem; /* Increase padding for better appearance */
+    background-color: #fe8849; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 0 9999px 9999px 0; /* Capsule shape for the button */
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent shrinking */
+    width: auto; /* Button width adjusts based on its content */
+    min-width: 150px; /* Minimum width to ensure it's not too small */
+}
+
+@media (max-width: 1200px) {
+    .newsletter-container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height */
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1rem; /* Ensure padding is consistent */
+    }
+
+    .newsletter {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 1rem; /* Space between stacked elements */
+        margin-bottom: 10px; /* Reduced space below the newsletter section */
+        margin-top: 10px; /* Reduced space above the newsletter section */
+    }
+
+    .letterimg .pic {
+        width: 100%; /* Adjust size for smaller screens */
+        max-width: 200px; /* Maximum width for the image */
+        margin-left: 0; /* Reset margin */
+    }
+
+    .mail input {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure it does not exceed this width */
+    }
+
+    .subscribe {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 150px; /* Ensure it does not exceed this width */
+        border-radius: 0; /* Remove border radius to fit full width */
+    }
+}

@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+  }
+  body::-webkit-scrollbar {
+    display: none; 
+  }

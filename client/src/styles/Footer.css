@@ -1,0 +1,128 @@
+.footer {
+    /* background-color: #f8f9fa; Light background color */
+    text-align: center;
+    position: relative;
+    margin-top: 50px
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px; /* Adjust the minimum width as needed */
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+    /* margin-top: auto */
+  }
+  
+  .footer-logo {
+    width: 48%; /* Ensure logo fits the section */
+    margin-left: 100px;
+  }
+  
+  .footer-link {
+    color: #f77136; /* Link color */
+    text-decoration: none;
+    display: block;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info svg {
+    margin-right: 0.5rem; /* Space between icon and text */
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center; /* Align text and icon */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .contact-info span {
+    color: #3d3d3d;
+    font-family: GilroyRegular, sans-serif; /* Removed special characters */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-icons a {
+    color: #f77136;
+    font-size: 1.5rem; /* Adjust size of icons */
+    transition: color 0.3s ease;
+  }
+  
+  .scan-image {
+    width: 32%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .footer-bottom {
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .footer-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom space */
+  }
+  
+  .footer-bottom p {
+    position: absolute;
+    bottom: 20px; /* Position text at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center text horizontally */
+    margin: 0;
+    color: #fff; /* Text color on top of the image */
+    padding: 0.5rem; /* Padding around text */
+  }
+  
+  h4 {
+    box-sizing: border-box;
+    color: #f76f32;
+    font-family: GilroyBold, sans-serif; /* Removed special characters */
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  span {
+    color: #3d3d3d;
+    font-family: GilroyRegular, sans-serif; /* Removed special characters */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center; 
+    gap: 5px; 
+}
+
+  
+  .arr {
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+  }
+  
